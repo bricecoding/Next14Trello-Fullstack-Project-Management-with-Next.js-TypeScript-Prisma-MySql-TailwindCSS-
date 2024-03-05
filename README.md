@@ -1,89 +1,71 @@
-# Fullstack Trello Clone: Next.js 14, Server Actions, React, Prisma, Stripe, Tailwind, MySQL
+# Fullstack Trello Clone: Next.js 14
 
-![image](https://github.com/AntonioErdeljac/next13-trello/assets/23248726/fd260249-82fa-4588-a67a-69bb4eb09067)
+This is a Fullstack Trello Clone built with Next.js 14, featuring Server Actions, React, Prisma, Stripe, Tailwind, MySQL, and more.
 
+## Key Features
 
-This is a repository for Fullstack Trello Clone: Next.js 14, Server Actions, React, Prisma, Stripe, Tailwind, MySQL
+- **Authentication**: Secure user authentication.
+- **Organizations / Workspaces**: Organize your boards into workspaces.
+- **Board Management**: Create, rename, and delete boards.
+- **Beautiful Covers**: Utilizes Unsplash API for random cover images.
+- **Activity Log**: Keep track of activities within your organization.
+- **List Operations**: Create, rename, delete, reorder, and copy lists.
+- **Card Operations**: Create, rename, delete, reorder, and copy cards.
+- **Card Activity Log**: Track changes and activities related to cards.
+- **Board Limit**: Set limits for boards within each organization.
+- **Stripe Subscription**: Enable subscription to unlock unlimited boards.
+- **Landing Page**: Attractive landing page for your application.
+- **MySQL Database**: Persistent storage using MySQL.
+- **Prisma ORM**: Modern database access with Prisma.
+- **UI Libraries**: Utilizes ShadCn UI & TailwindCSS for a sleek user interface.
 
-[VIDEO TUTORIAL](https://www.youtube.com/watch?v=pRybm9lXW2c)
+## Prerequisites
 
-Key Features:
-- Auth 
-- Organizations / Workspaces
-- Board creation
-- Unsplash API for random beautiful cover images
-- Activity log for entire organization
-- Board rename and delete
-- List creation
-- List rename, delete, drag & drop reorder and copy
-- Card creation
-- Card description, rename, delete, drag & drop reorder and copy
-- Card activity log
-- Board limit for every organization
-- Stripe subscription for each organization to unlock unlimited boards
-- Landing page
-- MySQL DB
-- Prisma ORM
-- shadcnUI & TailwindCSS
+- Node.js version 18.x.x
 
-### Prerequisites
+## Getting Started
 
-**Node version 18.x.x**
+1. **Clone the repository**:
 
-### Cloning the repository
+   ```shell
+   git clone https://github.com/bricecoding/next14-trello.git
+   ```
 
-```shell
-git clone https://github.com/AntonioErdeljac/next13-trello.git
-```
+2. **Install packages**:
 
-### Install packages
+   ```shell
+   npm install
+   ```
 
-```shell
-npm i
-```
+3. **Setup .env file**:
 
-### Setup .env file
+   Add your environment variables to the `.env` file:
 
+   ```shell
+   NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+   CLERK_SECRET_KEY=
+   # ... (add other variables)
+   ```
 
-```js
-NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
-CLERK_SECRET_KEY=
-NEXT_PUBLIC_CLERK_SIGN_IN_URL=
-NEXT_PUBLIC_CLERK_SIGN_UP_URL=
-NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=
-NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=
+4. **Setup Prisma**:
 
-DATABASE_URL=
+   Add Postgresql or MySql Database (I used Neon):
 
-NEXT_PUBLIC_UNSPLASH_ACCESS_KEY=
+   ```shell
+   npx prisma generate
+   npx prisma db push
+   ```
 
-STRIPE_API_KEY=
+5. **Start the app**:
 
-NEXT_PUBLIC_APP_URL=
+   ```shell
+   npm run dev
+   ```
 
-STRIPE_WEBHOOK_SECRET=
-```
+## Available Commands
 
-### Setup Prisma
+Running commands with npm:
 
-Add MySQL Database (I used PlanetScale)
-
-```shell
-npx prisma generate
-npx prisma db push
-
-```
-
-### Start the app
-
-```shell
-npm run dev
-```
-
-## Available commands
-
-Running commands with npm `npm run [command]`
-
-| command         | description                              |
-| :-------------- | :--------------------------------------- |
-| `dev`           | Starts a development instance of the app |
+| Command | Description                               |
+| ------- | ----------------------------------------- |
+| `dev`   | Starts a development instance of the app. |
