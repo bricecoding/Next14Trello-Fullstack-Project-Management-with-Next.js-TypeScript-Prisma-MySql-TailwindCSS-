@@ -1,6 +1,6 @@
 # Fullstack Trello Clone: Next.js 14
 
-This is a Fullstack Trello Clone built with Next.js 14, featuring Server Actions, React, Prisma, Stripe, Tailwind, MySQL, and more...
+This is a Fullstack Trello Clone built with Next.js 14, featuring TypeScript, Server Actions, React, Prisma, Stripe, Tailwind, MySQL, and more...
 
 ## Key Features
 
